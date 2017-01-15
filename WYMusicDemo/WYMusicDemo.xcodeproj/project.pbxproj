@@ -54,6 +54,7 @@
 		758CB2671E2B6DA100280FCE /* WYMusicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYMusicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		758CB26B1E2B6DA100280FCE /* WYMusicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYMusicDemoUITests.m; sourceTree = "<group>"; };
 		758CB26D1E2B6DA100280FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F5BC361E2B7389001388EB /* WYHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WYHeader.h; path = ../WYHeader.h; sourceTree = "<group>"; };
 		A063629891F4715DFAD235D0 /* Pods-WYMusicDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYMusicDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYMusicDemo/Pods-WYMusicDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +126,7 @@
 		758CB2451E2B6DA100280FCE /* WYMusicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				75F5BC361E2B7389001388EB /* WYHeader.h */,
 				758CB2491E2B6DA100280FCE /* AppDelegate.h */,
 				758CB24A1E2B6DA100280FCE /* AppDelegate.m */,
 				758CB24C1E2B6DA100280FCE /* ViewController.h */,
@@ -584,6 +586,7 @@
 				758CB2721E2B6DA100280FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		758CB2731E2B6DA100280FCE /* Build configuration list for PBXNativeTarget "WYMusicDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +595,7 @@
 				758CB2751E2B6DA100280FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		758CB2761E2B6DA100280FCE /* Build configuration list for PBXNativeTarget "WYMusicDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +604,7 @@
 				758CB2781E2B6DA100280FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

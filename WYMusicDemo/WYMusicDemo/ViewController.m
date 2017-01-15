@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "WYHeader.h"
+#import <YTKNetwork/YTKNetwork.h>
+#import <AFNetworking/AFNetworking.h>
 @interface ViewController ()
 
 @end
@@ -16,13 +18,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
+    [manager GET:kUrl parameters:nil progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *responseObject) {
+             
+             NSArray *arr = responseObject[@"result"][@"tracks"];
+             NSLog(@"%@" ,arr[0]);
+             
+         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             NSLog(@"%@", error);
+         }];
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <YTKNetwork/YTKNetwork.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = @"http://yuantiku.com";
     return YES;
 }
 
