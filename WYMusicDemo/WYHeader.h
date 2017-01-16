@@ -8,6 +8,10 @@
 
 #ifndef WYHeader_h
 #define WYHeader_h
+#import "UIView+Extension.h"
+#import "UIColor+Extension.h"
+#import "NSString+Conversion.h"
+
 #define kUrl @"http://music.163.com/api/playlist/detail?id=107875443"  //我喜欢的音乐
 #define kLyricUrl @"http://music.163.com/api/song/media?id=" // 歌词
 

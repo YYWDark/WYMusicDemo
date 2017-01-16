@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <YTKNetwork/YTKNetwork.h>
+#import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -16,9 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
-    config.baseUrl = @"http://yuantiku.com";
+    // 注册后台播放
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayback error:NULL];
+    
+    // 开启远程事件  -->自动切歌
+    [application beginReceivingRemoteControlEvents];
     return YES;
 }
 
