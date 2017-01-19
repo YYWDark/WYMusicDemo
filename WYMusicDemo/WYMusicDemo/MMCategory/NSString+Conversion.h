@@ -10,4 +10,5 @@
 
 @interface NSString (Conversion)
 + (NSString *)stringConversionWithTimeInterval:(NSTimeInterval)timeInterval;
++ (NSArray *)analysisLyricFileWithFileName:(NSString *)fileName;
 @end

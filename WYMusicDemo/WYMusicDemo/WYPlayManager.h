@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @protocol WYPlayManagerDelegate;
 @interface WYPlayManager : NSObject
 @property (nonatomic, weak) id<WYPlayManagerDelegate> delegate;
 @property (nonatomic, assign) NSTimeInterval totalTime;
+@property (nonatomic, assign) NSTimeInterval currentTime;
 + (instancetype)sharedManager;
 - (void)playMusicWithUrl:(NSString *)urlString;
 - (void)pause;
@@ -20,4 +22,5 @@
 
 @protocol WYPlayManagerDelegate <NSObject>
 - (void)manager:(WYPlayManager *)manager perProgress:(CGFloat)progress currentTime:(NSTimeInterval)currentTime;
+- (void)manager:(WYPlayManager *)manager successfully:(BOOL)flag;
 @end
