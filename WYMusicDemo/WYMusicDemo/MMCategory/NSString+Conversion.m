@@ -36,21 +36,6 @@
          [array addObject:[WJLrcModel modelWithTime:[timeDate timeIntervalSinceDate:initDate] title:[eachStr substringFromIndex:11]]]; 
     }
     
-//    [lineStrs enumerateObjectsUsingBlock:^(NSString * eachStr, NSUInteger idx, BOOL * _Nonnull stop) {
-//        if (eachStr.length < 11) {continue;}
-//            
-//        NSString *time = [eachStr substringWithRange:NSMakeRange(0, 11)];
-////        NSArray
-////        formatter.dateFormat = @"[mm:ss.SS]";
-////        NSDate *timeDate = [formatter dateFromString:eachStr];
-////        NSDate *initDate = [formatter dateFromString:@"[00:00.00]"];
-////        [WJLrcModel modelWithTime:3 title:eachStr];
-//        formatter.dateFormat = @"[mm:ss.SS]";
-//        NSDate *timeDate = [formatter dateFromString:time];
-//        NSDate *initDate = [formatter dateFromString:@"[00:00.00]"];
-//        
-//        [array addObject:[WJLrcModel modelWithTime:[timeDate timeIntervalSinceDate:initDate] title:eachStr]];
-//    }];
     return [array copy];
 }
 
